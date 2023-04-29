@@ -1,0 +1,42 @@
+header{
+    .img-user:hover{
+        width:60px; height:60px;
+        transition: all .5s;
+    }
+    .img-carrito:hover{
+        width:60px; height:60px;
+        transition: all .5s;
+    }
+}
+@keyframes zoom{
+    0%{transform: scale(.7,.7);}
+    25%{transform: scale(1,1);}
+    50%{transform:scale(.7,.7);}
+    75%{transform: scale(1,1);}
+    100%{transform: scale(.7,.7);}
+}
+.img-pedidosYa{
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+footer{
+    .img-facebook:hover{
+        width:60px; height:60px;
+        transition: all .5s;
+    }
+    .img-instagram:hover{
+        width:60px; height:60px;
+        transition: all .5s;
+    }
+    .img-twitter:hover{
+        width:60px; height:60px;
+        transition: all .5s;
+    }
+    .img-youtube:hover{
+        width:60px; height:60px;
+        transition: all .5s;
+    }
+}

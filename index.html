@@ -5,11 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Manteca | Panaderia y Confiteria</title>
+    <link rel="shortcut icon" href="img/logo.png">
     <meta name="description" content="Somos La Manteca | panaderia y confiteria, disfruta de los mejores productos y al mejor precio. Contamos con delibery y compras al por mayor.">
     <meta name="keywords" content="la manteca, panaderia, confiteria, pan, facturas, delibery, pedidios ya">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="gridIndex">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="la manteca logo" width="150" height="auto"></a>
+            </div>
+            <nav class="nav">
+                <ul class="menuHorizontal">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">PRODUCTOS</a>
+                        <ul class="menuVertical">
+                            <li><a href="paginas/panaderia.html">Panaderia</a></li>
+                            <li><a href="paginas/confiteria.html">Confiteria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="paginas/sucursales.html">SUCURSALES</a></li>
+                    <li><a href="paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div>
+                <form class="buscador" role="search">
+                    <input class="buscadorText" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit">Buscar</button>
+                </form>
+                <a href="#"><img src="img/usuario.png" alt="usuario" width="45" height="auto" class="img-user"></a>
+                <a href="#"><img src="img/carrito.png" alt="carrito" width="45" height="auto" class="img-carrito"></a>
+            </div>
+        </header>
+        <main>
+            <div class="titulo center mb-2 mt-2">
+                <h1>INICIO</h1>
+            </div>
+            <div class="iframe mb-2 ml-2 mr-2" data-aos="fade-right">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/Aw73bVIv4cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="infoHistoria center mb-2 pl-2 pr-2 mr-2 ml-2" data-aos="fade-left">
+                <h2 class="mt-2">Te contamos algo sobre nosotros</h2>
+                <p>La Manteca es una empresa familiar que se dedica, desde hace más de 40 años, a hornear productos frescos y de la más alta calidad en sus sucursales ubicadas a lo largo de todo el corredor norte de la ciudad. Contamos con dos centros de distribución ubicados estratégicamente para cubrir la demanda tanto de nuestros locales como de terceros con entregas diarias que garantizan que los productos mantengan los altos estándares con los que los elaboramos.</p>           
+            </div>
+            <div class="delibery center mt-2 pl-2 pr-2">
+                <p>Aparte de la calidad de los productos y los buenos precios, contamos con delibery sin cargo a partir de cierto monto, podes comprar entrando a nuestra <a href="#">TIENDA</a>. Contamos con precios al por mayor, no dudes en contactarnos.</p>
+            </div>
+           <div class="pedidosYa center mb-2">
+                <p>Tambien nos podes encontrar en <a href="https://play.google.com/store/apps/details?id=com.pedidosya&hl=es_AR&gl=US" target="_blank"><img src="img/pedidosYa.jpg" alt="logo pedidos ya" width="80" height="auto" class="img-pedidosYa"></a></p>
+           </div>
+           <div class="imgGif center" data-aos="fade-right">
+                <img src="img/delibery.gif" alt="delibery" width="20%" height="auto">
+           </div>
+        </main>
+        <footer>
+            <div class="logo center">
+                <a href="#"><img src="img/logo.png" alt="la manteca logo" width="150" height="auto"></a>
+            </div>
+            <div class="copy center mb-2">
+                <p><strong>© 2021 | Emanuel Stoicoff</strong></p>
+            </div>
+            <div class="redes center">
+                <a href="#"><img src="img/facebookLogo.png" alt="facebook" width="50" height="50" class="img-facebook" data-aos="fade-right"></a>
+                <a href="#"><img src="img/instagramLogo.png" alt="instagram" width="50" height="50" class="img-instagram" data-aos="fade-right"></a>
+                <a href="#"><img src="img/twitterLogo.png" alt="twitter" width="50" height="50" class="img-twitter" data-aos="fade-left"></a>
+                <a href="#"><img src="img/youtubeLogo.png" alt="youtube" width="50" height="50" class="img-youtube" data-aos="fade-left"></a>
+            </div>
+            <div class="mediosContacto center">
+                <div>
+                    <h3>MEDIOS DE CONTACTO</h3>
+                </div>
+                <div>
+                    <img src="img/emailLogo.png" alt="" width="35" height="35">
+                    <strong>lamanteca1@gmail.com</strong>
+                </div>
+                <div>  
+                    <img src="img/whatsappLogo.png" alt="whatsapp" width="35" height="35">
+                    <strong>+54 9 11-3810-####</strong>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script> 
+    </div>
 </body>
 </html>
