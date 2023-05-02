@@ -132,6 +132,10 @@ header .btn:hover {
     bottom: 180px;
     left: 125px;
   }
+  header .nav {
+    position: relative;
+    left: 30px;
+  }
 }
 
 main {
