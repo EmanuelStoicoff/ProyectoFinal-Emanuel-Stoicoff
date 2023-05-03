@@ -240,7 +240,7 @@ footer {
   display: grid;
   grid-template-areas: "titulo titulo titulo titulo" "pan facturas mGrasa mManteca" "cremona panNegro moldeSalvado moldeBlanco" "grisines panCampo bizcochitos chipacitos" "prepizzas empanadas tartaJYQ tartaVerduras";
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
 }
 .mainGridPanaderia .titulo {
   grid-area: titulo;
@@ -366,6 +366,129 @@ footer {
     grid-area: chipacitos;
   }
   .mainGridPanaderia div img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainGridConfiteria {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo titulo" "pastaFrola tartaRicota lemonPie budin" "cheesFramb cheesFrutosRojos chocotorta brownie" "muffins masasSecas alfajorMaicena pepas" "sandwichMigaJYQ sandwichMigaJYQ sandwichMigaEspecial sandwichMigaEspecial";
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto auto;
+}
+.mainGridConfiteria .titulo {
+  grid-area: titulo;
+}
+.mainGridConfiteria .pastaFrola {
+  grid-area: pastaFrola;
+}
+.mainGridConfiteria .tartaRicota {
+  grid-area: tartaRicota;
+}
+.mainGridConfiteria .lemonPie {
+  grid-area: lemonPie;
+}
+.mainGridConfiteria .budin {
+  grid-area: budin;
+}
+.mainGridConfiteria .cheesFramb {
+  grid-area: cheesFramb;
+}
+.mainGridConfiteria .cheesFrutosRojos {
+  grid-area: cheesFrutosRojos;
+}
+.mainGridConfiteria .chocotorta {
+  grid-area: chocotorta;
+}
+.mainGridConfiteria .brownie {
+  grid-area: brownie;
+}
+.mainGridConfiteria .muffins {
+  grid-area: muffins;
+}
+.mainGridConfiteria .masasSecas {
+  grid-area: masasSecas;
+}
+.mainGridConfiteria .alfajorMaicena {
+  grid-area: alfajorMaicena;
+}
+.mainGridConfiteria .pepas {
+  grid-area: pepas;
+}
+.mainGridConfiteria .sandwichMigaJYQ {
+  grid-area: sandwichMigaJYQ;
+}
+.mainGridConfiteria .sandwichMigaEspecial {
+  grid-area: sandwichMigaEspecial;
+}
+.mainGridConfiteria div {
+  margin-bottom: 5px;
+}
+.mainGridConfiteria div img {
+  border-radius: 0.5rem;
+}
+.mainGridConfiteria div h3 {
+  color: rgb(30, 33, 37);
+}
+.mainGridConfiteria div h3:hover {
+  background-color: rgb(252, 174, 57);
+  transition: all 0.3s;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .mainGridConfiteria {
+    display: grid;
+    grid-template-areas: "titulo titulo" "pastaFrola tartaRicota" "lemonPie budin" "cheesFramb cheesFrutosRojos" "chocotorta brownie" "muffins masasSecas" "alfajorMaicena pepas" "sandwichMigaJYQ sandwichEspecial";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  }
+  .mainGridConfiteria .titulo {
+    grid-area: titulo;
+  }
+  .mainGridConfiteria .pastaFrola {
+    grid-area: pastaFrola;
+  }
+  .mainGridConfiteria .tartaRicota {
+    grid-area: tartaRicota;
+  }
+  .mainGridConfiteria .lemonPie {
+    grid-area: lemonPie;
+  }
+  .mainGridConfiteria .budin {
+    grid-area: budin;
+  }
+  .mainGridConfiteria .cheesFramb {
+    grid-area: cheesFramb;
+  }
+  .mainGridConfiteria .cheesFrutosRojos {
+    grid-area: cheesFrutosRojos;
+  }
+  .mainGridConfiteria .chocotorta {
+    grid-area: chocotorta;
+  }
+  .mainGridConfiteria .brownie {
+    grid-area: brownie;
+  }
+  .mainGridConfiteria .muffins {
+    grid-area: muffins;
+  }
+  .mainGridConfiteria .masasSecas {
+    grid-area: masasSecas;
+  }
+  .mainGridConfiteria .alfajorMaicena {
+    grid-area: alfajorMaicena;
+  }
+  .mainGridConfiteria .pepas {
+    grid-area: pepas;
+  }
+  .mainGridConfiteria .sandwichMigaJYQ {
+    grid-area: sandwichMigaJYQ;
+  }
+  .mainGridConfiteria .sandwichMigaEspecial {
+    grid-area: sandwichMigaEspecial;
+  }
+  .mainGridConfiteria div img {
     width: 100%;
     height: auto;
   }
