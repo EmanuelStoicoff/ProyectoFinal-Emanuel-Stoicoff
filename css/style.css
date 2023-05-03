@@ -366,7 +366,7 @@ footer {
     grid-area: chipacitos;
   }
   .mainGridPanaderia div img {
-    width: 100%;
+    width: 85%;
     height: auto;
   }
 }
@@ -489,7 +489,7 @@ footer {
     grid-area: sandwichMigaEspecial;
   }
   .mainGridConfiteria div img {
-    width: 100%;
+    width: 85%;
     height: auto;
   }
 }
