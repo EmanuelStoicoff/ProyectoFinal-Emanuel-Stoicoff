@@ -247,6 +247,10 @@ footer {
     justify-content: center;
     align-content: center;
   }
+  .mainGridIndex .delivery {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 .mainGridPanaderia {
