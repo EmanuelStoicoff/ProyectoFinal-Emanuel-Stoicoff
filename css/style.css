@@ -3,17 +3,21 @@
   padding: 0;
 }
 
-.gridIndex {
+.gridGral {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
   font-family: "Tahoma";
 }
-.gridIndex p {
+.gridGral p {
   font-weight: 600;
 }
-.gridIndex h1 {
+.gridGral h1 {
   font-size: 2.5rem;
+}
+
+h1 {
+  border-bottom: solid black;
 }
 
 .img-fluida {
@@ -138,49 +142,6 @@ header .btn:hover {
   }
 }
 
-main {
-  background-image: url(../img/fondoMain.jpg);
-  display: grid;
-  grid-template-areas: "titulo titulo" "iframe infoHistoria" "delibery delibery" "pedidosYa pedidosYa" "imgGif imgGif";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto auto auto;
-}
-main h1 {
-  border-bottom: solid black;
-}
-main .titulo {
-  grid-area: titulo;
-}
-main .iframe {
-  grid-area: iframe;
-}
-main .infoHistoria {
-  grid-area: infoHistoria;
-}
-main .delibery {
-  grid-area: delibery;
-}
-main .pedidosYa {
-  grid-area: pedidosYa;
-}
-main .imgGif {
-  grid-area: imgGif;
-}
-main .infoHistoria {
-  display: flex;
-  border: double black;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media only screen and (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-}
-
 footer {
   background-color: #d87524;
 }
@@ -231,6 +192,46 @@ footer {
     position: relative;
     top: 30px;
     height: 80%;
+  }
+}
+
+.mainIndex {
+  background-image: url(../img/fondoMain.jpg);
+  display: grid;
+  grid-template-areas: "titulo titulo" "iframe infoHistoria" "delibery delibery" "pedidosYa pedidosYa" "imgGif imgGif";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto;
+}
+.mainIndex .titulo {
+  grid-area: titulo;
+}
+.mainIndex .iframe {
+  grid-area: iframe;
+}
+.mainIndex .infoHistoria {
+  grid-area: infoHistoria;
+}
+.mainIndex .delibery {
+  grid-area: delibery;
+}
+.mainIndex .pedidosYa {
+  grid-area: pedidosYa;
+}
+.mainIndex .imgGif {
+  grid-area: imgGif;
+}
+.mainIndex .infoHistoria {
+  display: flex;
+  border: double black;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 }
 
