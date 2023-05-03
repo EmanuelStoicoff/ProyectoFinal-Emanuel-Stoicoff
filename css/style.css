@@ -7,17 +7,16 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
-  font-family: "Tahoma";
-}
-.gridGral p {
-  font-weight: 600;
-}
-.gridGral h1 {
-  font-size: 2.5rem;
+  width: 100%;
+  height: auto;
 }
 
-h1 {
+main {
+  background-image: url(../img/fondoMain.jpg);
+}
+main h1 {
   border-bottom: solid black;
+  font-size: 2.5rem;
 }
 
 .img-fluida {
@@ -114,6 +113,9 @@ header .btn:hover {
     justify-content: center;
     height: 250px;
   }
+  header nav {
+    width: 70%;
+  }
   header .logo {
     position: relative;
     right: 100px;
@@ -195,39 +197,38 @@ footer {
   }
 }
 
-.mainIndex {
-  background-image: url(../img/fondoMain.jpg);
+.mainGridIndex {
   display: grid;
-  grid-template-areas: "titulo titulo" "iframe infoHistoria" "delibery delibery" "pedidosYa pedidosYa" "imgGif imgGif";
+  grid-template-areas: "titulo titulo" "iframe infoHistoria" "delivery delivery" "pedidosYa pedidosYa" "imgGif imgGif";
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto auto auto;
 }
-.mainIndex .titulo {
+.mainGridIndex .titulo {
   grid-area: titulo;
 }
-.mainIndex .iframe {
+.mainGridIndex .iframe {
   grid-area: iframe;
 }
-.mainIndex .infoHistoria {
+.mainGridIndex .infoHistoria {
   grid-area: infoHistoria;
 }
-.mainIndex .delibery {
-  grid-area: delibery;
+.mainGridIndex .delivery {
+  grid-area: delivery;
 }
-.mainIndex .pedidosYa {
+.mainGridIndex .pedidosYa {
   grid-area: pedidosYa;
 }
-.mainIndex .imgGif {
+.mainGridIndex .imgGif {
   grid-area: imgGif;
 }
-.mainIndex .infoHistoria {
+.mainGridIndex .infoHistoria {
   display: flex;
   border: double black;
   flex-wrap: wrap;
   justify-content: center;
 }
 @media only screen and (max-width: 768px) {
-  .mainIndex {
+  .mainGridIndex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,17 +236,157 @@ footer {
   }
 }
 
+.mainGridPanaderia {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo titulo" "pan facturas mGrasa mManteca" "cremona panNegro moldeSalvado moldeBlanco" "grisines panCampo bizcochitos chipacitos" "prepizzas empanadas tartaJYQ tartaVerduras";
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+.mainGridPanaderia .titulo {
+  grid-area: titulo;
+}
+.mainGridPanaderia .pan {
+  grid-area: pan;
+}
+.mainGridPanaderia .facturas {
+  grid-area: facturas;
+}
+.mainGridPanaderia .mGrasa {
+  grid-area: mGrasa;
+}
+.mainGridPanaderia .mManteca {
+  grid-area: mManteca;
+}
+.mainGridPanaderia .cremona {
+  grid-area: cremona;
+}
+.mainGridPanaderia .panNegro {
+  grid-area: panNegro;
+}
+.mainGridPanaderia .moldeSalvado {
+  grid-area: moldeSalvado;
+}
+.mainGridPanaderia .moldeBlanco {
+  grid-area: moldeBlanco;
+}
+.mainGridPanaderia .grisines {
+  grid-area: grisines;
+}
+.mainGridPanaderia .panCampo {
+  grid-area: panCampo;
+}
+.mainGridPanaderia .bizcochitos {
+  grid-area: bizcochitos;
+}
+.mainGridPanaderia .prepizzas {
+  grid-area: prepizzas;
+}
+.mainGridPanaderia .empanadas {
+  grid-area: empanadas;
+}
+.mainGridPanaderia .tartaJYQ {
+  grid-area: tartaJYQ;
+}
+.mainGridPanaderia .tartaVerduras {
+  grid-area: tartaVerduras;
+}
+.mainGridPanaderia .chipacitos {
+  grid-area: chipacitos;
+}
+.mainGridPanaderia div {
+  margin-bottom: 5px;
+}
+.mainGridPanaderia div img {
+  border-radius: 0.5rem;
+}
+.mainGridPanaderia div h3 {
+  color: rgb(30, 33, 37);
+}
+.mainGridPanaderia div h3:hover {
+  background-color: rgb(252, 174, 57);
+  transition: all 0.3s;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .mainGridPanaderia {
+    display: grid;
+    grid-template-areas: "titulo titulo" "pan facturas" "mGrasa mManteca" "cremona panNegro" "moldeSalvado moldeBlanco" "grisines panCampo" "bizcochitos chipacitos" "prepizzas empanadas" "tartaJYQ tartaVerduras";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  }
+  .mainGridPanaderia .titulo {
+    grid-area: titulo;
+  }
+  .mainGridPanaderia .pan {
+    grid-area: pan;
+  }
+  .mainGridPanaderia .facturas {
+    grid-area: facturas;
+  }
+  .mainGridPanaderia .mGrasa {
+    grid-area: mGrasa;
+  }
+  .mainGridPanaderia .mManteca {
+    grid-area: mManteca;
+  }
+  .mainGridPanaderia .cremona {
+    grid-area: cremona;
+  }
+  .mainGridPanaderia .panNegro {
+    grid-area: panNegro;
+  }
+  .mainGridPanaderia .moldeSalvado {
+    grid-area: moldeSalvado;
+  }
+  .mainGridPanaderia .moldeBlanco {
+    grid-area: moldeBlanco;
+  }
+  .mainGridPanaderia .grisines {
+    grid-area: grisines;
+  }
+  .mainGridPanaderia .panCampo {
+    grid-area: panCampo;
+  }
+  .mainGridPanaderia .bizcochitos {
+    grid-area: bizcochitos;
+  }
+  .mainGridPanaderia .prepizzas {
+    grid-area: prepizzas;
+  }
+  .mainGridPanaderia .empanadas {
+    grid-area: empanadas;
+  }
+  .mainGridPanaderia .tartaJYQ {
+    grid-area: tartaJYQ;
+  }
+  .mainGridPanaderia .tartaVerduras {
+    grid-area: tartaVerduras;
+  }
+  .mainGridPanaderia .chipacitos {
+    grid-area: chipacitos;
+  }
+  .mainGridPanaderia div img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 header .img-user:hover {
-  width: 60px;
-  height: 60px;
+  background-color: #a0561a;
+  border-radius: 1rem;
   transition: all 0.5s;
 }
 header .img-carrito:hover {
-  width: 60px;
-  height: 60px;
+  background-color: #a0561a;
+  border-radius: 5px;
   transition: all 0.5s;
 }
 
+main .delivery a:hover {
+  border-bottom: solid rgb(73, 72, 72);
+  border-top: solid rgb(73, 72, 72);
+  transition: all 0.1s;
+}
 @keyframes zoom {
   0% {
     transform: scale(0.7, 0.7);
@@ -263,7 +404,7 @@ header .img-carrito:hover {
     transform: scale(0.7, 0.7);
   }
 }
-.img-pedidosYa {
+main .img-pedidosYa {
   animation-name: zoom;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
@@ -346,7 +487,7 @@ header nav ul li {
 }
 
 nav li:hover {
-  background-color: #914f19;
+  background-color: #a0561a;
   border-radius: 10px;
 }
 

@@ -1,10 +1,9 @@
-.mainIndex{
-    background-image: url(../img/fondoMain.jpg);
+.mainGridIndex{
     display: grid;
     grid-template-areas: 
     "titulo titulo"
     "iframe infoHistoria"
-    "delibery delibery"
+    "delivery delivery"
     "pedidosYa pedidosYa"
     "imgGif imgGif";
     grid-template-columns: 50% 50%;
@@ -12,7 +11,7 @@
     .titulo{grid-area: titulo;}
     .iframe{grid-area: iframe;}
     .infoHistoria{grid-area: infoHistoria;}
-    .delibery{grid-area: delibery;}
+    .delivery{grid-area: delivery;}
     .pedidosYa{grid-area: pedidosYa;}
     .imgGif{grid-area: imgGif;}
     .infoHistoria{

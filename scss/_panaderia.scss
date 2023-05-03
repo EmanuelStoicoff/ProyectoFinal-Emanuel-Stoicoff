@@ -1,0 +1,78 @@
+.mainGridPanaderia{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "pan facturas mGrasa mManteca"
+    "cremona panNegro moldeSalvado moldeBlanco"
+    "grisines panCampo bizcochitos chipacitos"
+    "prepizzas empanadas tartaJYQ tartaVerduras";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto;
+    .titulo{grid-area: titulo;}
+    .pan{grid-area: pan;}
+    .facturas{grid-area: facturas;}
+    .mGrasa{grid-area: mGrasa;}
+    .mManteca{grid-area: mManteca;}
+    .cremona{grid-area: cremona;}
+    .panNegro{grid-area: panNegro;}
+    .moldeSalvado{grid-area: moldeSalvado;}
+    .moldeBlanco{grid-area: moldeBlanco;}
+    .grisines{grid-area: grisines;}
+    .panCampo{grid-area: panCampo;}
+    .bizcochitos{grid-area: bizcochitos;}
+    .prepizzas{grid-area: prepizzas;}
+    .empanadas{grid-area: empanadas;}
+    .tartaJYQ{grid-area: tartaJYQ;}
+    .tartaVerduras{grid-area: tartaVerduras;}
+    .chipacitos{grid-area: chipacitos;}
+    div{
+        margin-bottom: 5px;
+        img{border-radius: .5rem;}
+        h3{
+            color: rgb(30, 33, 37);
+            &:hover{
+                background-color: rgb(252, 174, 57);
+                transition: all .3s;
+                border-radius: 1rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px){
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "pan facturas" 
+        "mGrasa mManteca"
+        "cremona panNegro" 
+        "moldeSalvado moldeBlanco"
+        "grisines panCampo" 
+        "bizcochitos chipacitos"
+        "prepizzas empanadas" 
+        "tartaJYQ tartaVerduras";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        .titulo{grid-area: titulo;}
+        .pan{grid-area: pan;}
+        .facturas{grid-area: facturas;}
+        .mGrasa{grid-area: mGrasa;}
+        .mManteca{grid-area: mManteca;}
+        .cremona{grid-area: cremona;}
+        .panNegro{grid-area: panNegro;}
+        .moldeSalvado{grid-area: moldeSalvado;}
+        .moldeBlanco{grid-area: moldeBlanco;}
+        .grisines{grid-area: grisines;}
+        .panCampo{grid-area: panCampo;}
+        .bizcochitos{grid-area: bizcochitos;}
+        .prepizzas{grid-area: prepizzas;}
+        .empanadas{grid-area: empanadas;}
+        .tartaJYQ{grid-area: tartaJYQ;}
+        .tartaVerduras{grid-area: tartaVerduras;}
+        .chipacitos{grid-area: chipacitos;}
+        div{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
