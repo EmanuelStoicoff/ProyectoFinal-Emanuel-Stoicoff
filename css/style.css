@@ -573,6 +573,108 @@ footer {
   }
 }
 
+.mainGridContacto {
+  display: grid;
+  grid-template-areas: "titulo titulo" "textoForm textoForm" "form textoVisita" "form textoRedes" "form gifFlecha";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto;
+}
+.mainGridContacto .titulo {
+  grid-area: titulo;
+}
+.mainGridContacto .textoForm {
+  grid-area: textoForm;
+}
+.mainGridContacto .form {
+  grid-area: form;
+}
+.mainGridContacto .textoVisita {
+  grid-area: textoVisita;
+}
+.mainGridContacto .textoRedes {
+  grid-area: textoRedes;
+}
+.mainGridContacto .gifFlecha {
+  grid-area: gifFlecha;
+}
+.mainGridContacto .form {
+  border-radius: 10px;
+}
+.mainGridContacto input {
+  background-color: #fbfbfb;
+  width: 85%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d87524;
+}
+.mainGridContacto textarea {
+  background-color: #fbfbfb;
+  width: 85%;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d87524;
+}
+.mainGridContacto label {
+  display: block;
+  float: center;
+}
+.mainGridContacto button {
+  height: 45px;
+  text-transform: uppercase;
+  background-color: #d87524;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  width: 85%;
+  margin-bottom: 2px;
+}
+.mainGridContacto button:hover {
+  background-color: rgb(187, 181, 175);
+}
+.mainGridContacto button p {
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .mainGridContacto {
+    display: grid;
+    grid-template-areas: "titulo" "textoForm" "form" "textoVisita" "textoRedes";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .mainGridContacto .titulo {
+    grid-area: titulo;
+  }
+  .mainGridContacto .textoForm {
+    grid-area: textoForm;
+  }
+  .mainGridContacto .form {
+    grid-area: form;
+  }
+  .mainGridContacto .textoVisita {
+    grid-area: textoVisita;
+  }
+  .mainGridContacto .textoRedes {
+    grid-area: textoRedes;
+  }
+  .mainGridContacto .form {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mainGridContacto .gifFlecha {
+    display: none;
+  }
+  .mainGridContacto .textoRedes, .mainGridContacto .textoVisita {
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 header .img-user:hover {
   background-color: #a0561a;
   border-radius: 1rem;

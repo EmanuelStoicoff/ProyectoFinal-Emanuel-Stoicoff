@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="gridIndex">
+    <div class="gridGral">
         <header>
             <div class="logo">
                 <a href="../index.html"><img src="../img/logo.png" alt="la manteca logo" width="150" height="auto"></a>
@@ -39,9 +39,37 @@
                 <a href="#"><img src="../img/carrito.png" alt="carrito" width="45" height="auto" class="img-carrito"></a>
             </div>
         </header>
-        <main>
+        <main class="mainGridContacto">
             <div class="titulo center mb-2 mt-2">
                 <h1>CONTACTO</h1>
+            </div>
+            <div class="textoForm center mb-2">
+                <h3>~No dudes en dejarnos tu consulta o una recomendacion~</h3>
+            </div>
+            <form class="form center mb-2">
+                <p>
+                    <label for="nombre">Nombre</label>
+                      <input type="text" name="introducir_nombre" placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocar_email">Email</label>
+                      <input type="email" name="introducir_email" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
+                    <textarea name="introducir_mensaje" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>                    
+                <button type="submit" name="enviar_formulario"><p>Enviar</p></button>
+                <button type="reset" name="limpiar_formulario"><p>Limpiar</p></button>
+            </form>
+            <div class="textoVisita mr-2">
+                <p>Veni a visitarnos para mejorar tu experiencia con nuestra familia, podes pasar por la sucursal mas cercana, mira donde estan nuestras <a href="sucursales.html">SUCURSALES</a>. Tambien podes hacer pedidos que lleguen a tu domicilio, visita nuestra <a href="#">TIENDA</a> y disfruta de nuestros productos desde la comodidad de tu casa.</p>
+            </div>
+            <div class="textoRedes mb-2 mr-2">
+                <p><strong>No olvides seguirnos en nuestras redes.</strong></p>
+            </div>
+            <div class="gifFlecha">
+                <img src="../img/flechaAbajo.gif" alt="flecha" width="150">
             </div>
         </main>
         <footer>
